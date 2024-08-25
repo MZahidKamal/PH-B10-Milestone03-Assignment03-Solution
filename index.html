@@ -33,6 +33,25 @@
                 extend: {
                     colors: {
                         clifford: "#da373d",
+                        shade0: "#FFFFFF",
+                        shade1: "#E9E9E9",
+                        shade3: "#A0A0A0",
+                        shade4: "#737373",
+                        shade5: "#494949",
+                        shade6: "#212121",
+                        shade7: "#1C1C1C",
+                        shade8: "#F4F4F4",
+                        green: "#ABEF5F",
+                        pink: "#E7C1D3",
+                        yellow: "#EFDA6E",
+                        light_green: "#A4DAC3",
+                        blue: "#77AAEA",
+                    },
+                    fontFamily: {
+                        manrope: ["Manrope", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        old_paper: "url('assets/bg.jpg')",
                     },
                 },
             },
@@ -47,11 +66,66 @@
 
 
 <!--BODY SECTION STARTS HERE------------------------------------------------------------------------------------------->
-<body>
+<body class="font-manrope">
 
 
 <!--HEADER SECTION STARTS HERE----------------------------------------------------------------------------------------->
-<header></header>
+<header>
+    <nav class="bg-shade8">
+        <div class="container w-11/12 sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12 2xl:w-4/5 mx-auto py-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[1fr_2fr] lg:grid-cols-[1fr_2fr] xl:grid-cols-[1fr_500px_400px] 2xl:grid-cols-[1fr_600px_1fr]">
+
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR LOGO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="nav-logo w-60 h-14 flex justify-start sm:justify-center md:justify-start lg:justify-start xl:justify-start 2xl:justify-start items-center gap-3">
+                <div class="w-11 h-11 bg-green rounded-full flex justify-center items-center ">
+                    <i class="fa-solid fa-arrow-right -rotate-45 fa-xl" style="color: #000000;"></i>
+                </div>
+                <h1 class="text-4xl font-extrabold tracking-tight">Rinterio</h1>
+            </div>
+
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR LINKS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="nav-links mx-auto hidden sm:hidden md:hidden lg:hidden xl:flex 2xl:flex justify-center items-center 2xl:gap-16 xl:gap-8">
+                <button class="text-base font-extrabold tracking-tighter text-shade5">Home</button>
+                <button class="text-base font-bold tracking-tighter text-shade4">Services</button>
+                <button class="text-base font-bold tracking-tighter text-shade4">Portfolio</button>
+                <button class="text-base font-bold tracking-tighter text-shade4">Blogs</button>
+                <button class="text-base font-bold tracking-tighter text-shade4">Contact Us</button>
+            </div>
+
+            <div class="nav-components flex justify-end sm:justify-center md:justify-end lg:justify-end xl:justify-end 2xl:justify-end items-center gap-5">
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR SEARCH BUTTON~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div class="search-logo border rounded-full hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex justify-center items-center gap-3">
+                    <button class="w-11 h-11 bg-shade0 rounded-full flex justify-center items-center ">
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #737373;"></i>
+                    </button>
+                </div>
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR CART BUTTON~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div class="cart-logo border rounded-full hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex justify-center items-center gap-3">
+                    <button class="w-11 h-11 bg-shade0 rounded-full flex justify-center items-center ">
+                        <i class="fa-solid fa-cart-shopping fa-lg" style="color: #737373;"></i>
+                    </button>
+                </div>
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR BOOK CONSULT BUTTON~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <button class="nav-button w-60 h-14 hidden sm:flex md:flex lg:flex xl:flex 2xl:flex justify-center items-center gap-3 bg-green rounded-full px-6 py-3">
+                    <h1 class="text-xl font-extrabold tracking-tight">Book Consult</h1>
+                    <div class="w-9 h-9 bg-shade7 rounded-full flex justify-center items-center">
+                        <i class="fa-solid fa-arrow-right -rotate-45 fa-xl" style="color: #F4F4F4;"></i>
+                    </div>
+                </button>
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR 3-BAR-MENU BUTTON~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div class="3-bar-menu border rounded-full flex sm:flex lg:flex xl:hidden 2xl:hidden justify-center sm:justify-center md:justify-end lg:justify-end xl:justify-end 2xl:justify-end items-center gap-3">
+                    <button class="w-11 h-11 bg-shade0 rounded-full flex justify-center items-center ">
+                        <i class="fa-solid fa-bars fa-lg" style="color: #737373;"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
 <!--HEADER SECTION ENDS HERE------------------------------------------------------------------------------------------->
 
 
